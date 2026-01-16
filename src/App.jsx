@@ -6,6 +6,7 @@ import ServicesPage from './pages/ServicesPage';
 import IndustriesPage from './pages/IndustriesPage';
 import PremiumFooter from './common/Footer';
 import WhoWeArePage from './pages/WhoWeArePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
          <Route path="/who-we-are" element={
           <Layout>
             <WhoWeArePage />
+          </Layout>
+        } />
+        <Route path="/contact" element={
+          <Layout>
+            <ContactPage />
           </Layout>
         } />
       </Routes>

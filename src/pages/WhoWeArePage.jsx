@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../common/Navbar";
 
 const bgImageHero = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80";
@@ -12,6 +12,8 @@ const stats = [
   { value: "67", label: "EXPERTS AT YOUR SERVICE" },
   { value: "3450", label: "MEXPRESSO CUPGIALES" },
 ];
+
+ 
 
 const services = [
   {
@@ -34,32 +36,32 @@ const services = [
 ];
 
 export default function WhoWeAre() {
+  
+   useEffect(() =>{
+     window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+     })
+  })
+
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white ">
       <Navbar isTransparent={false} />
 
       {/* ===== SECTION 0: HERO WITH "WHO WE ARE" TITLE ===== */}
       <div
-        className="relative bg-cover bg-center"
+        className="relative bg-cover bg-center" 
         style={{ backgroundImage: `url(${bgImageHero})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-gray-900/70" />
-        
-        <div className="relative min-h-[60vh] flex items-center justify-center">
-          <div className="max-w-7xl mx-auto px-6 py-32 text-center">
+        <div className="relative  min-h-[60vh] flex items-center justify-center">
+          <div className="max-w-7xl mx-auto  px-6 py-32 md:py-44 text-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               WHO <span className="text-blue-400">WE ARE</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
               Pioneers in international business consulting since 2001
             </p>
-            
-            {/* Scroll indicator */}
-            <div className="mt-20 animate-bounce">
-              <svg className="w-8 h-8 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </div>
           </div>
         </div>
       </div>
@@ -73,8 +75,8 @@ export default function WhoWeAre() {
         
         {/* Diagonal white overlay */}
         <div className="relative bg-white clip-diagonal-top pt-20 pb-48 -mt-24">
-          <div className="max-w-7xl mx-auto px-6 pt-32">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 max-w-3xl">
+          <div className="max-w-7xl mx-auto px-6 lg:px-16 pt-32">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 ">
               Founded in 2001, we are a consulting firm specializing in the creation of international companies.
             </h2>
 
@@ -117,7 +119,7 @@ export default function WhoWeAre() {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-gray-900/80" />
         
-        <div className="relative max-w-7xl mx-auto px-6 py-32 text-white">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-16  py-32 text-white">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-bold text-blue-300 mb-6">
               YOUR QUALITY PARTNER
@@ -143,7 +145,7 @@ export default function WhoWeAre() {
       </div>
 
       {/* ===== SECTION 3: SERVICES ===== */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
           Beyond offshore companies, we support clients on various projects
         </h2>
