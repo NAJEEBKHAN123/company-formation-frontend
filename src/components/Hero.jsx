@@ -19,7 +19,7 @@ export default function OSCHKHero() {
 
         {/* Hero Content */}
         <div className="flex-1 flex items-center">
-          <div className="w-full max-w-7xl px-5 sm:px-8 md:px-12 lg:px-16 pt-24 sm:pt-28">
+          <div className="w-full max-w-7xl px-5 sm:px-8 md:px-12 lg:px-16 pt-0 sm:pt-28">
             
             <h1 className="font-bold leading-tight mb-12">
               <span className="block text-3xl sm:text-3xl md:text-4xl lg:text-5xl">
