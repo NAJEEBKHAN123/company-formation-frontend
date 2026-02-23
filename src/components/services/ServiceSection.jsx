@@ -30,7 +30,7 @@ const ServiceSection = ({
           </svg>
         </div>
 
-        <div className="relative z-10 w-full px-6 sm:px-12 md:px-20 py-24 md:py-32">
+        <div className="relative z-10 w-full px-4 sm:px-12 md:px-16 py-24 md:py-32">
           <div className="max-w-5xl mx-auto">
 
             {/* Breadcrumb */}
@@ -82,7 +82,7 @@ const ServiceSection = ({
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-12 md:px-16 py-16">
         {children}
       </div>
 

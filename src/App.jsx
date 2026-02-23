@@ -13,6 +13,7 @@ import OneOffServicesPage from './pages/services/one-off-services';
 import IndustriesPage from './pages/IndustriesPage';
 import WhoWeArePage from './pages/WhoWeArePage';
 import ContactPage from './pages/ContactPage';
+import IndustryDetailPage from './pages/IndustryDetailPage';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path="/industries" element={<Layout><IndustriesPage /></Layout>} />
         <Route path="/who-we-are" element={<Layout><WhoWeArePage /></Layout>} />
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+        {/* <Route path="/industries" element={<IndustriesPage />} /> */}
+        <Route path="/industries/:id" element={<Layout><IndustryDetailPage /></Layout> } />
       </Routes>
     </Router>
   );
